@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button id="backButton"><i class="fas fa-arrow-left"></i> Kembali</button>
+      <script>
+        document
+          .getElementById("backButton")
+          .addEventListener("click", function () {
+            window.history.back();
+          });
+      </script>
+      <h1>BMI Calculator</h1>
+      <form class="calculator">
+        <div>
+          <label for="age">Umur</label>
+          <input type="number" id="age" min="0" step="1" value="0" />
+        </div>
+
+        <div>
+          <label for="gender">Jenis Kelamin</label>
+          <select id="gender">
+            <option value="male">Pria</option>
+            <option value="female">Wanita</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="weight">Berat Badan (kg)</label>
+          <input type="number" id="weight" min="0" step="0.01" value="0" />
+        </div>
+
+        <div>
+          <label for="height">Tinggi (cm)</label>
+          <input type="number" id="height" min="0" step="0.01" value="0" />
+        </div>
+
+        <div>
+          <button type="reset">Ulang</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <section class="output">
+        <h3>BMI kamu adalah</h3>
+        <p id="bmi">0</p>
+        <p id="desc">N/A</p>
+      </section>
+
+      <section class="bmi-scale">
+        <div class="underweight">
+          <h4>Kurang berat badan</h4>
+          <p>&lt; 18.5</p>
+        </div>
+
+        <div class="normal">
+          <h4>Sehat</h4>
+          <p>18.5 – 25</p>
+        </div>
+
+        <div class="overweight">
+          <h4>Kelebihan berat badan</h4>
+          <p>25 – 30</p>
+        </div>
+
+        <div class="obese">
+          <h4>Obesitas</h4>
+          <p>≥ 30</p>
+        </div>
+      </section>
+
+      <div class="reverensi">
+        <p>
+          <a
+            style="text-decoration: none"
+            href="https://youtu.be/oAVkXa76lzw?si=MXikSoOYmE0tJReJ"
+            >@ Reverensi By Refined Guides</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

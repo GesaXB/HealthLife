@@ -1,0 +1,209 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(Bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#backButton {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background-color: #00bf63;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#backButton:hover {
+  background-color: #7ed957;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #00bf63;
+}
+
+form.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form.calculator div {
+  display: flex;
+  flex-direction: column;
+}
+
+form.calculator label {
+  margin-bottom: 5px;
+}
+
+form.calculator input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+form.calculator button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 30px; 
+}
+
+form.calculator button[type="reset"] {
+  background-color: #00bf63;
+  color: white;
+}
+
+form.calculator button[type="reset"]:hover {
+  background-color: #7ed957;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form.calculator button[type="submit"] {
+  background-color: #00bf63;
+  color: white;
+}
+
+form.calculator button[type="submit"]:hover {
+  background-color: #7ed957;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.output {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bmi-scale {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bmi-scale div {
+  flex: 1;
+  padding: 10px;
+}
+
+.bmi-scale .underweight {
+  background-color: #ffddc1;
+}
+
+.bmi-scale .normal {
+  background-color: #c1e1c1;
+}
+
+.bmi-scale .overweight {
+  background-color: #ffb6c1;
+}
+
+.bmi-scale .obese {
+  background-color: #ffc1c1;
+}
+
+.bmi-scale h4 {
+  margin-bottom: 5px;
+}
+
+.bmi-scale p {
+  margin-top: 0;
+}
+
+.reverensi {
+  text-align: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.reverensi p {
+  margin: 0;
+}
+
+#bmiDisplay {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#descDisplay {
+  font-size: 24px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#exerciseLink {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #00bf63;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#exerciseLink:hover {
+  color: #7ed957;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .calculator input {
+    padding: 6px;
+  }
+
+  .output p {
+    font-size: 22px;
+  }
+
+  .bmi-scale h4 {
+    font-size: 16px;
+  }
+
+  .bmi-scale p {
+    font-size: 14px;
+  }
+
+  .bmi-scale div {
+    padding: 18px;
+  }
+}
+
+.reverensi a {
+  color: #28844b;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px;
+}
